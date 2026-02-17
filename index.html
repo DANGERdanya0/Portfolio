@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>IT-педагог | Персональный сайт преподавателя</title>
+  
+
+</head>
+<body>
+
+    <!-- Hero секция в стиле макета Анны Девятка -->
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">Преподаватель IT-дисциплин</div>
+                <h1>Прокачай свои навыки <span>в IT</span> с опытным наставником</h1>
+                <p class="hero-description">Если хочешь стать востребованным специалистом, начни сейчас. Заполни форму и получи 20 минут дополнительно к первой консультации.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">лет практики</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">студентов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">призеров</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="location.href='#guestbook'">Оставить заявку</button>
+                    <button class="btn-secondary" onclick="location.href='#methodical'">Мои материалы</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-photo"></div>
+            </div>
+        </div>
+    </div>
+     <nav>
+        <ul>
+            <li><a href="#home">🏠 Главная</a></li>
+            <li><a href="#business-card">👤 Визитка</a></li>
+            <li><a href="#methodical">📚 Методическая копилка</a></li>
+            <li><a href="#results">📊 Результаты</a></li>
+            <li><a href="#blog">📰 Блог</a></li>
+            <li><a href="#extracurricular">🏆 Достижения</a></li>
+            <li><a href="#students">👨‍🎓 Обучающимся</a></li>
+            <li><a href="#gallery">📸 Галерея</a></li>
+            <li><a href="#guestbook">📬 Обратная связь</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Преподаватель IT-дисциплин</h1>
+            <p style="font-size: 1.2rem; color: #4a5568;">Петров Алексей Игоревич</p>
+            <p style="color: #667eea;">Специалист в области программирования и баз данных</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Главная страница -->
+        <section id="home" class="page">
+            <h2>🚀 Главная страница</h2>
+            <div class="contact-info">
+                <p><strong>👤 ФИО:</strong> Петров Алексей Игоревич</p>
+                <p><strong>🏢 Место работы:</strong> ГБПОУ "Колледж информационных технологий №42", г. Москва</p>
+                <p><strong>🎓 Образование:</strong> МГТУ им. Н.Э. Баумана, факультет "Информатика и системы управления"</p>
+                <p><strong>📧 Email:</strong> a.petrov@kit42.ru</p>
+            </div>
+
+            <h3>🗺️ Навигация по сайту</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                <a href="#business-card" style="text-decoration: none; color: #2d3748; background: #f7fafc; padding: 1rem; border-radius: 10px; text-align: center;">👤 Визитная карточка</a>
+                <a href="#methodical" style="text-decoration: none; color: #2d3748; background: #f7fafc; padding: 1rem; border-radius: 10px; text-align: center;">📚 Методическая копилка</a>
+                <a href="#results" style="text-decoration: none; color: #2d3748; background: #f7fafc; padding: 1rem; border-radius: 10px; text-align: center;">📊 Результаты</a>
+                <a href="#blog" style="text-decoration: none; color: #2d3748; background: #f7fafc; padding: 1rem; border-radius: 10px; text-align: center;">📰 Блог</a>
+            </div>
+
+            <h3>📌 Основные разделы</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>🔥 Горячие новости</h4>
+                    <p>Студенты группы ИС-21 заняли 2 место на чемпионате "Профессионалы" по компетенции "Веб-технологии"</p>
+                    <p class="news-date">15 февраля 2025</p>
+                </div>
+                <div class="card">
+                    <h4>💻 Новый курс</h4>
+                    <p>Запущен курс по Python для начинающих. Старт 1 марта</p>
+                </div>
+                <div class="card">
+                    <h4>🏆 Достижение</h4>
+                    <p>Сертификат эксперта WorldSkills по компетенции "Программные решения для бизнеса"</p>
+                </div>
+            </div>
+
+            <h3>📧 Обратная связь</h3>
+            <form style="max-width: 500px;">
+                <div style="margin-bottom: 1rem;">
+                    <label for="name">Ваше имя:</label><br>
+                    <input type="text" id="name" style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid #e2e8f0;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" rows="4" style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid #e2e8f0;"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить сообщение</button>
+            </form>
+        </section>
+
+        <!-- Визитная карточка -->
+        <section id="business-card" class="page">
+            <h2>👤 Визитная карточка</h2>
+            <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                <div class="photo-placeholder">📸 Алексей Петров</div>
+                <div>
+                    <h3>Петров Алексей Игоревич</h3>
+                    <p><strong>Должность:</strong> преподаватель IT-дисциплин, методист</p>
+                    <p><strong>Место работы:</strong> ГБПОУ "КИТ №42"</p>
+                    <p><strong>Преподаваемые дисциплины:</strong></p>
+                    <div>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Базы данных</span>
+                        <span class="skill-tag">Веб-разработка</span>
+                        <span class="skill-tag">Кибербезопасность</span>
+                        <span class="skill-tag">Алгоритмизация</span>
+                    </div>
+                    <p><strong>Ученая степень:</strong> кандидат технических наук</p>
+                    <p><strong>Ученое звание:</strong> доцент</p>
+                    <p><strong>Направление подготовки:</strong> 09.00.00 - Информатика и вычислительная техника</p>
+                    <p><strong>Повышение квалификации:</strong> 2024 - "Цифровые технологии в образовании", МИРЭА</p>
+                    <p><strong>Общий стаж:</strong> 12 лет</p>
+                    <p><strong>Стаж по специальности:</strong> 10 лет</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">🏅 Награды и достижения</h3>
+            <div class="card-grid">
+                <div class="card">🏆 Благодарность Министерства образования (2024) <span class="doc-badge">PDF</span></div>
+                <div class="card">🥇 Сертификат эксперта WorldSkills (2023) <span class="doc-badge">PDF</span></div>
+                <div class="card">📜 Диплом "Лучший преподаватель года" (2024) <span class="doc-badge">PDF</span></div>
+                <div class="card">📋 Сертификат CISCO CCNA (2024) <span class="doc-badge">PDF</span></div>
+            </div>
+        </section>
+
+        <!-- Методическая копилка -->
+        <section id="methodical" class="page">
+            <h2>📚 Методическая копилка</h2>
+            
+            <h3>📄 Рабочие программы</h3>
+            <table>
+                <tr><th>Название дисциплины</th><th>Курс</th><th>Специальность</th><th>Файл</th></tr>
+                <tr><td>Основы программирования на Python</td><td>1 курс</td><td>09.02.07</td><td><span class="doc-badge">PDF</span></td></tr>
+                <tr><td>Базы данных</td><td>2 курс</td><td>09.02.06</td><td><span class="doc-badge">PDF</span></td></tr>
+                <tr><td>Веб-дизайн и разработка</td><td>2 курс</td><td>09.02.05</td><td><span class="doc-badge">PDF</span></td></tr>
+                <tr><td>Компьютерные сети</td><td>3 курс</td><td>09.02.02</td><td><span class="doc-badge">PDF</span></td></tr>
+            </table>
+
+            <h3>🧪 Методические разработки</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>🐍 Python для начинающих</h4>
+                    <p>Лабораторные работы, презентации, тесты</p>
+                    <span class="doc-badge">10 файлов</span>
+                </div>
+                <div class="card">
+                    <h4>🗄️ SQL тренажер</h4>
+                    <p>Интерактивные задания по базам данных</p>
+                    <span class="doc-badge">Web-приложение</span>
+                </div>
+                <div class="card">
+                    <h4>📱 Веб-разработка</h4>
+                    <p>Проектные задания, макеты, примеры кода</p>
+                    <span class="doc-badge">8 проектов</span>
+                </div>
+            </div>
+
+            <h3>📝 Публикации</h3>
+            <div class="card-grid">
+                <div class="card">📄 "Применение ChatGPT в обучении программированию" (2024) <span class="doc-badge">PDF</span></div>
+                <div class="card">📄 "Методика подготовки к WorldSkills" (2023) <span class="doc-badge">PDF</span></div>
+                <div class="card">📄 "Геймификация на уроках информатики" (2023) <span class="doc-badge">PDF</span></div>
+            </div>
+        </section>
+
+        <!-- Результаты педагогической деятельности -->
+        <section id="results" class="page">
+            <h2>📊 Результаты педагогической деятельности</h2>
+            
+            <h3>📈 Мониторинг успеваемости</h3>
+            <table>
+                <tr><th>Учебный год</th><th>Дисциплина</th><th>Успеваемость</th><th>Качество знаний</th></tr>
+                <tr><td>2024-2025 (1 сем)</td><td>Python</td><td>98%</td><td>82%</td></tr>
+                <tr><td>2024-2025 (1 сем)</td><td>Базы данных</td><td>100%</td><td>88%</td></tr>
+                <tr><td>2023-2024</td><td>Веб-разработка</td><td>100%</td><td>85%</td></tr>
+            </table>
+
+            <h3>📊 Сравнительный анализ (демонстрационный экзамен)</h3>
+            <table>
+                <tr><th>Год</th><th>Средний балл</th><th>% сдавших на "хорошо" и "отлично"</th></tr>
+                <tr><td>2024</td><td>4.3</td><td>78%</td></tr>
+                <tr><td>2023</td><td>4.1</td><td>72%</td></tr>
+                <tr><td>2022</td><td>4.0</td><td>68%</td></tr>
+            </table>
+
+            <h3>🏆 Участие в чемпионатах и олимпиадах</h3>
+            <table>
+                <tr><th>Мероприятие</th><th>Студент</th><th>Результат</th><th>Дата</th></tr>
+                <tr><td>WorldSkills "Программные решения"</td><td>Иванов А.</td><td>2 место (регион)</td><td>февраль 2025</td></tr>
+                <tr><td>Хакатон "Цифровой прорыв"</td><td>Петрова Е., Сидоров Н.</td><td>Финалисты</td><td>декабрь 2024</td></tr>
+                <tr><td>Олимпиада по информатике</td><td>Смирнова К.</td><td>1 место (город)</td><td>ноябрь 2024</td></tr>
+            </table>
+        </section>
+
+        <!-- Блог -->
+        <section id="blog" class="page">
+            <h2>📰 Блог / Новости</h2>
+            
+            <div class="news-item">
+                <p class="news-date">20 февраля 2025</p>
+                <h3>🎉 Итоги чемпионата "Профессионалы"</h3>
+                <p>Наши студенты показали отличные результаты! В компетенции "Веб-технологии" - 2 место, "Сетевые технологии" - участие в финале.</p>
+            </div>
+
+            <div class="news-item">
+                <p class="news-date">15 февраля 2025</p>
+                <h3>💡 Новый факультатив: "Кибербезопасность для начинающих"</h3>
+                <p>С марта начинаются занятия. Приглашаются студенты 2-3 курсов. Запись в кабинете 405.</p>
+            </div>
+
+            <div class="news-item">
+                <p class="news-date">1 февраля 2025</p>
+                <h3>📢 Вебинар для преподавателей</h3>
+                <p>Провел вебинар "Искусственный интеллект в образовании". Запись доступна в методической копилке.</p>
+            </div>
+        </section>
+
+        <!-- Внеучебная деятельность / Достижения обучающихся -->
+        <section id="extracurricular" class="page">
+            <h2>🏆 Достижения обучающихся</h2>
+            
+            <table>
+                <tr><th>Студент</th><th>Группа</th><th>Мероприятие</th><th>Результат</th><th>Дата</th></tr>
+                <tr><td>Александр Иванов</td><td>ИС-31</td><td>WorldSkills Russia</td><td>🥈 Серебро</td><td>февраль 2025</td></tr>
+                <tr><td>Екатерина Петрова</td><td>ИС-21</td><td>Хакатон Мосгортех</td><td>🏅 Приз зрительских симпатий</td><td>январь 2025</td></tr>
+                <tr><td>Дмитрий Смирнов</td><td>ИС-41</td><td>Олимпиада по 1С</td><td>🥉 3 место</td><td>декабрь 2024</td></tr>
+                <tr><td>Анна Козлова</td><td>ИС-22</td><td>Конкурс "IT-проект года"</td><td>🏆 Победитель</td><td>ноябрь 2024</td></tr>
+            </table>
+
+            <h3>📸 Фото с мероприятий</h3>
+            <div class="gallery" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="gallery-item">🏆 Награждение</div>
+                <div class="gallery-item">💻 Хакатон</div>
+                <div class="gallery-item">👨‍🏫 Мастер-класс</div>
+            </div>
+        </section>
+
+        <!-- Обучающимся -->
+        <section id="students" class="page">
+            <h2>👨‍🎓 Обучающимся</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h4>📘 Конспекты и материалы</h4>
+                    <ul style="list-style: none;">
+                        <li>📌 Python: основы синтаксиса</li>
+                        <li>📌 SQL: шпаргалка</li>
+                        <li>📌 Алгоритмы: теория</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>💻 Онлайн-ресурсы</h4>
+                    <ul style="list-style: none;">
+                        <li>🔗 Stepik.org - курсы</li>
+                        <li>🔗 LeetCode - задачи</li>
+                        <li>🔗 W3Schools - учебник</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>📅 Расписание консультаций</h4>
+                    <p>Пн/Чт 15:00-16:30 (каб. 405)</p>
+                    <p>Сб 10:00-12:00 (online)</p>
+                </div>
+                <div class="card">
+                    <h4>🎯 Анонсы</h4>
+                    <p>🔔 Хакатон 15 марта</p>
+                    <p>🔔 Олимпиада по Python 20 марта</p>
+                </div>
+            </div>
+
+            <h3>📺 Видеоуроки</h3>
+            <div class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="card">🎥 Урок 1: Введение в Python</div>
+                <div class="card">🎥 Урок 2: Условные операторы</div>
+                <div class="card">🎥 Урок 3: Циклы</div>
+                <div class="card">🎥 Урок 4: Функции</div>
+            </div>
+        </section>
+
+        <!-- Фотогалерея -->
+        <section id="gallery" class="page">
+            <h2>📸 Фотогалерея</h2>
+            <div class="gallery">
+                <div class="gallery-item">🏫 Кабинет IT</div>
+                <div class="gallery-item">👥 Хакатон 2025</div>
+                <div class="gallery-item">🏆 Награждение</div>
+                <div class="gallery-item">💻 Лабораторная</div>
+                <div class="gallery-item">🎓 Выпускной</div>
+                <div class="gallery-item">🤝 Мастер-класс</div>
+            </div>
+        </section>
+
+        <!-- Гостевая книга -->
+        <section id="guestbook" class="page">
+            <h2>
