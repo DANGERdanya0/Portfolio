@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Гостевая книга</title>
+</head>
+<body>
+    <main class="container">
+        <!-- Гостевая книга -->
+        <section id="guestbook" class="page">
+            <h2>📬 Обратная связь</h2>
+            <p>Здесь вы можете оставить свой отзыв, задать вопрос или внести предложение.</p>
+            <form>
+                <div style="margin-bottom: 1rem;">
+                    <label for="guest-name">Ваше имя:</label><br>
+                    <input type="text" id="guest-name" style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid #e2e8f0;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="guest-message">Ваше сообщение:</label><br>
+                    <textarea id="guest-message" rows="5" style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid #e2e8f0;"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <div class="guestbook-entries" style="margin-top: 2rem;">
+                 <div class="card">
+                    <p><strong>Анна:</strong> Отличный сайт! Много полезных материалов.</p>
+                    <p class="news-date">18 февраля 2025</p>
+                </div>
+                <div class="card">
+                    <p><strong>Иван:</strong> Спасибо за курс по Python!</p>
+                    <p class="news-date">17 февраля 2025</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

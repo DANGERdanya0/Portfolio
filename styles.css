@@ -326,7 +326,7 @@
         }
         .gallery-item {
             background: linear-gradient(135deg, #667eea, #764ba2);
-            height: 200px;
+            min-height: 200px;
             border-radius: 20px;
             display: flex;
             align-items: center;

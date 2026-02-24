@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Главная</title>
+</head>
+<body>
+    <main class="container">
+        <!-- Главная страница -->
+        <section id="home" class="page">
+            <h2>🚀 Главная страница</h2>
+            <div class="contact-info">
+                <p><strong>👤 ФИО:</strong> Петров Алексей Игоревич</p>
+                <p><strong>🏢 Место работы:</strong> ГБПОУ "Колледж информационных технологий №42", г. Москва</p>
+                <p><strong>🎓 Образование:</strong> МГТУ им. Н.Э. Баумана, факультет "Информатика и системы управления"</p>
+                <p><strong>📧 Email:</strong> a.petrov@kit42.ru</p>
+            </div>
+
+            <h3>🗺️ Навигация по сайту</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                <a href="business-card.html" style="text-decoration: none; color: #2d3748; background: #f7fafc; padding: 1rem; border-radius: 10px; text-align: center;">👤 Визитная карточка</a>
+                <a href="methodical.html" style="text-decoration: none; color: #2d3748; background: #f7fafc; padding: 1rem; border-radius: 10px; text-align: center;">📚 Методическая копилка</a>
+                <a href="results.html" style="text-decoration: none; color: #2d3748; background: #f7fafc; padding: 1rem; border-radius: 10px; text-align: center;">📊 Результаты</a>
+                <a href="blog.html" style="text-decoration: none; color: #2d3748; background: #f7fafc; padding: 1rem; border-radius: 10px; text-align: center;">📰 Блог</a>
+            </div>
+
+            <h3>📌 Основные разделы</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>🔥 Горячие новости</h4>
+                    <p>Студенты группы ИС-21 заняли 2 место на чемпионате "Профессионалы" по компетенции "Веб-технологии"</p>
+                    <p class="news-date">15 февраля 2025</p>
+                </div>
+                <div class="card">
+                    <h4>💻 Новый курс</h4>
+                    <p>Запущен курс по Python для начинающих. Старт 1 марта</p>
+                </div>
+                <div class="card">
+                    <h4>🏆 Достижение</h4>
+                    <p>Сертификат эксперта WorldSkills по компетенции "Программные решения для бизнеса"</p>
+                </div>
+            </div>
+
+            <h3>📧 Обратная связь</h3>
+            <form style="max-width: 500px;">
+                <div style="margin-bottom: 1rem;">
+                    <label for="name">Ваше имя:</label><br>
+                    <input type="text" id="name" style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid #e2e8f0;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" rows="4" style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid #e2e8f0;"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить сообщение</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
