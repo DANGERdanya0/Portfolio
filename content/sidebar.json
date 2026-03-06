@@ -1,0 +1,17 @@
+{
+    "teacherInfo": {
+        "name": "Петров Алексей Игоревич",
+        "description": "Преподаватель IT-дисциплин"
+    },
+    "navLinks": [
+        { "href": "#home", "text": "🏠 Главная" },
+        { "href": "#business-card", "text": "👤 Визитка" },
+        { "href": "#methodical", "text": "📚 Методическая копилка" },
+        { "href": "#results", "text": "📊 Результаты" },
+        { "href": "#blog", "text": "📰 Блог" },
+        { "href": "#extracurricular", "text": "🏆 Достижения" },
+        { "href": "#students", "text": "👨‍🎓 Обучающимся" },
+        { "href": "#gallery", "text": "📸 Галерея" },
+        { "href": "#guestbook", "text": "📬 Обратная связь" }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "badge": "Преподаватель IT-дисциплин",
+    "title": "Прокачай свои навыки <span>в IT</span> с опытным наставником",
+    "description": "Если хочешь стать востребованным специалистом, начни сейчас. Заполни форму и получи 20 минут дополнительно к первой консультации.",
+    "backgroundImage": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+    "stats": [
+        { "number": "12+", "label": "лет практики" },
+        { "number": "500+", "label": "студентов" },
+        { "number": "50+", "label": "призеров" }
+    ],
+    "buttons": [
+        { "class": "btn-primary", "text": "Оставить заявку", "onclick": "document.querySelector('#guestbook').scrollIntoView({ behavior: 'smooth' });" },
+        { "class": "btn-secondary", "text": "Мои материалы", "onclick": "document.querySelector('#methodical').scrollIntoView({ behavior: 'smooth' });" }
+    ]
+}

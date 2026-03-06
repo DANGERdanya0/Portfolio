@@ -1,0 +1,37 @@
+/* Dark Theme */
+body {
+    background: #2d3748;
+    color: #e2e8f0;
+}
+
+#sidebar {
+    background: rgba(17, 24, 39, 0.8);
+    border-right-color: rgba(255, 255, 255, 0.1);
+}
+
+.page, .hero {
+    background: #4a5568;
+    color: #e2e8f0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+h2, h3, .hero-content h1 {
+    color: #ffffff;
+}
+
+.card {
+    background: #2d3748;
+    border-left-color: #764ba2;
+}
+
+.hero-content h1 span {
+    -webkit-text-fill-color: #9f7aea;
+}
+
+.teacher-info, #sidebar nav ul li a {
+    color: #e2e8f0;
+}
+
+#sidebar nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

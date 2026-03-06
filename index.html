@@ -8,69 +8,69 @@
 </head>
 <body>
 
-    <!-- Hero секция в стиле макета Анны Девятка -->
-    <div class="container">
-        <div class="hero">
-            <div class="hero-content">
-                <div class="hero-badge">Преподаватель IT-дисциплин</div>
-                <h1>Прокачай свои навыки <span>в IT</span> с опытным наставником</h1>
-                <p class="hero-description">Если хочешь стать востребованным специалистом, начни сейчас. Заполни форму и получи 20 минут дополнительно к первой консультации.</p>
-                
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">12+</span>
-                        <span class="stat-label">лет практики</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">студентов</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">призеров</span>
-                    </div>
-                </div>
+    <div class="main-layout">
+        <aside id="sidebar">
+            <!-- Sidebar content will be loaded dynamically -->
+        </aside>
 
-                <div class="hero-buttons">
-                    <button class="btn-primary" onclick="loadPage('pages/guestbook.html')">Оставить заявку</button>
-                    <button class="btn-secondary" onclick="loadPage('pages/methodical.html')">Мои материалы</button>
-                </div>
+        <main id="content">
+            <!-- Hero section -->
+            <div class="hero" data-content-key="hero">
+                <!-- Hero content will be loaded dynamically -->
             </div>
-            <div class="hero-image">
-                <div class="profile-photo"></div>
+
+            <!-- Page sections -->
+            <section id="home" class="page" data-content-key="home">
+                <!-- Home content will be loaded dynamically -->
+            </section>
+
+            <section id="business-card" class="page" data-content-key="business-card">
+                <!-- Business card content will be loaded dynamically -->
+            </section>
+
+            <section id="methodical" class="page" data-content-key="methodical">
+                <!-- Methodical content will be loaded dynamically -->
+            </section>
+
+            <section id="results" class="page" data-content-key="results">
+                <!-- Results content will be loaded dynamically -->
+            </section>
+
+            <section id="blog" class="page" data-content-key="blog">
+                <!-- Blog content will be loaded dynamically -->
+            </section>
+
+            <section id="extracurricular" class="page" data-content-key="extracurricular">
+                <!-- Extracurricular content will be loaded dynamically -->
+            </section>
+
+            <section id="students" class="page" data-content-key="students">
+                <!-- Students content will be loaded dynamically -->
+            </section>
+
+            <section id="gallery" class="page" data-content-key="gallery">
+                <!-- Gallery content will be loaded dynamically -->
+            </section>
+
+            <section id="guestbook" class="page" data-content-key="guestbook">
+                <!-- Guestbook content will be loaded dynamically -->
+            </section>
+        </main>
+    </div>
+
+    <div id="admin-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Админ-Панель</h2>
+                <button id="close-admin-panel" class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Admin panel content will be generated dynamically -->
             </div>
         </div>
     </div>
-     <nav>
-        <ul>
-            <li><a href="pages/home.html" target="content-frame">🏠 Главная</a></li>
-            <li><a href="pages/business-card.html" target="content-frame">👤 Визитка</a></li>
-            <li><a href="pages/methodical.html" target="content-frame">📚 Методическая копилка</a></li>
-            <li><a href="pages/results.html" target="content-frame">📊 Результаты</a></li>
-            <li><a href="pages/blog.html" target="content-frame">📰 Блог</a></li>
-            <li><a href="pages/extracurricular.html" target="content-frame">🏆 Достижения</a></li>
-            <li><a href="pages/students.html" target="content-frame">👨‍🎓 Обучающимся</a></li>
-            <li><a href="pages/gallery.html" target="content-frame">📸 Галерея</a></li>
-            <li><a href="pages/guestbook.html" target="content-frame">📬 Обратная связь</a></li>
-        </ul>
-    </nav>
-    <header>
-        <div class="container">
-            <h1>Преподаватель IT-дисциплин</h1>
-            <p style="font-size: 1.2rem; color: #4a5568;">Петров Алексей Игоревич</p>
-            <p style="color: #667eea;">Специалист в области программирования и баз данных</p>
-        </div>
-    </header>
 
-    <main class="container">
-        <iframe name="content-frame" src="pages/home.html" style="width:100%; height:800px; border:none;"></iframe>
-    </main>
-
-    <script>
-        function loadPage(page) {
-            document.querySelector('iframe[name="content-frame"]').src = page;
-        }
-    </script>
-
+    <script src="app.js" defer></script>
+    <script src="admin.js" defer></script>
 </body>
 </html>
